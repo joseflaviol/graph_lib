@@ -5,8 +5,8 @@ class DFS:
         self.visited = [False] * G.nV 
         self.components = 0
         self.parent = [None] * G.nV
-        self.opening_time = [0] * G.nV
-        self.closing_time = [0] * G.nV
+        self.opening_time = {x: 0 for x in range(G.nV)}
+        self.closing_time = {x: 0 for x in range(G.nV)}
         #self.run()
 
     def run(self):
