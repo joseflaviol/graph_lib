@@ -16,7 +16,7 @@ class FloydWarshall:
             for j in range(i + 1, G.nV):
                 
                 if j not in G.adj(i):
-                    self.distances[i][j] = 10000 # idea: if and edge (i, j) doesnt exist, the distance between i and j is initialized as a very big number
+                    self.distances[i][j] = float('inf') # idea: if and edge (i, j) doesnt exist, the distance between i and j is initialized as a very big number
                 else:
                     self.distances[i][j] = G.weight(i, j)
                 
