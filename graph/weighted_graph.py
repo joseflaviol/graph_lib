@@ -8,7 +8,7 @@ class EdgeWeightedGraph:
         for _ in range(nV):
             self.adj_list.append({})
     
-    def add_edge(self, u, v, w)
+    def add_edge(self, u, v, w):
         self.adj_list[u][v] = w 
 
         if not self.oriented:
